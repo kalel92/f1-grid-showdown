@@ -105,6 +105,28 @@ public class Pseudo3DCamera
         return new ScreenPoint { X = x, Y = y, Scale = scale };
     }
 
+    public ScreenPoint ProjectSprite(
+        float worldProgress, 
+        float worldX, 
+        Car player, 
+        int screenWidth, 
+        int screenHeight, 
+        float cameraHeight, 
+        float cameraDepth)
+    {
+        float relativeZ = worldProgress - player.Position.Progress;
+        if (relativeZ <= 0) return new ScreenPoint { Scale = -1 }; // Detrás de la cámara
+
+        float scale = cameraDepth / relativeZ;
+        float centerX = screenWidth / 2.0f;
+        float centerY = screenHeight / 2.0f;
+
+        float x = centerX + (scale * (worldX - player.Position.LateralOffset) * centerX);
+        float y = centerY - (scale * (0 - cameraHeight) * centerY); // Asumiendo altura mundo 0
+
+        return new ScreenPoint { X = x, Y = y, Scale = scale };
+    }
+
     private int FindSegmentIndexAtProgress(Track track, float progress)
     {
         float accumulated = 0;

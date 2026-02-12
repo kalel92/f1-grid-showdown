@@ -1,0 +1,12 @@
+D:\f1 andres style\src\F1Game.Core\bin\Debug\net6.0\F1Game.Core.deps.json
+D:\f1 andres style\src\F1Game.Core\bin\Debug\net6.0\F1Game.Core.dll
+D:\f1 andres style\src\F1Game.Core\bin\Debug\net6.0\F1Game.Core.pdb
+D:\f1 andres style\src\F1Game.Core\obj\Debug\net6.0\F1Game.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\f1 andres style\src\F1Game.Core\obj\Debug\net6.0\F1Game.Core.AssemblyInfoInputs.cache
+D:\f1 andres style\src\F1Game.Core\obj\Debug\net6.0\F1Game.Core.AssemblyInfo.cs
+D:\f1 andres style\src\F1Game.Core\obj\Debug\net6.0\F1Game.Core.csproj.CoreCompileInputs.cache
+D:\f1 andres style\src\F1Game.Core\obj\Debug\net6.0\F1Game.Core.sourcelink.json
+D:\f1 andres style\src\F1Game.Core\obj\Debug\net6.0\F1Game.Core.dll
+D:\f1 andres style\src\F1Game.Core\obj\Debug\net6.0\refint\F1Game.Core.dll
+D:\f1 andres style\src\F1Game.Core\obj\Debug\net6.0\F1Game.Core.pdb
+D:\f1 andres style\src\F1Game.Core\obj\Debug\net6.0\ref\F1Game.Core.dll

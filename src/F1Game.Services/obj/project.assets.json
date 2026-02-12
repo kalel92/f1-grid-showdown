@@ -1,0 +1,109 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "F1Game.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/F1Game.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/F1Game.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "F1Game.Core/1.0.0": {
+      "type": "project",
+      "path": "../F1Game.Core/F1Game.Core.csproj",
+      "msbuildProject": "../F1Game.Core/F1Game.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "F1Game.Core >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\andra\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\f1 andres style\\src\\F1Game.Services\\F1Game.Services.csproj",
+      "projectName": "F1Game.Services",
+      "projectPath": "D:\\f1 andres style\\src\\F1Game.Services\\F1Game.Services.csproj",
+      "packagesPath": "C:\\Users\\andra\\.nuget\\packages\\",
+      "outputPath": "D:\\f1 andres style\\src\\F1Game.Services\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\andra\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\f1 andres style\\src\\F1Game.Core\\F1Game.Core.csproj": {
+              "projectPath": "D:\\f1 andres style\\src\\F1Game.Core\\F1Game.Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.100"
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

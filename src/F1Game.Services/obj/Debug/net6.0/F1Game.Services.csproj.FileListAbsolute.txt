@@ -1,0 +1,16 @@
+D:\f1 andres style\src\F1Game.Services\bin\Debug\net6.0\F1Game.Services.deps.json
+D:\f1 andres style\src\F1Game.Services\bin\Debug\net6.0\F1Game.Services.dll
+D:\f1 andres style\src\F1Game.Services\bin\Debug\net6.0\F1Game.Services.pdb
+D:\f1 andres style\src\F1Game.Services\bin\Debug\net6.0\F1Game.Core.dll
+D:\f1 andres style\src\F1Game.Services\bin\Debug\net6.0\F1Game.Core.pdb
+D:\f1 andres style\src\F1Game.Services\obj\Debug\net6.0\F1Game.Services.csproj.AssemblyReference.cache
+D:\f1 andres style\src\F1Game.Services\obj\Debug\net6.0\F1Game.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\f1 andres style\src\F1Game.Services\obj\Debug\net6.0\F1Game.Services.AssemblyInfoInputs.cache
+D:\f1 andres style\src\F1Game.Services\obj\Debug\net6.0\F1Game.Services.AssemblyInfo.cs
+D:\f1 andres style\src\F1Game.Services\obj\Debug\net6.0\F1Game.Services.csproj.CoreCompileInputs.cache
+D:\f1 andres style\src\F1Game.Services\obj\Debug\net6.0\F1Game.Services.sourcelink.json
+D:\f1 andres style\src\F1Game.Services\obj\Debug\net6.0\F1Game.S.4D431900.Up2Date
+D:\f1 andres style\src\F1Game.Services\obj\Debug\net6.0\F1Game.Services.dll
+D:\f1 andres style\src\F1Game.Services\obj\Debug\net6.0\refint\F1Game.Services.dll
+D:\f1 andres style\src\F1Game.Services\obj\Debug\net6.0\F1Game.Services.pdb
+D:\f1 andres style\src\F1Game.Services\obj\Debug\net6.0\ref\F1Game.Services.dll

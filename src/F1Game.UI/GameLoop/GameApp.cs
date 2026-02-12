@@ -14,14 +14,18 @@ public class GameApp
     private readonly TrackGenerator _generator = new();
     private readonly Pseudo3DCamera _camera = new();
     private readonly TrackRenderer _renderer = new();
+    private readonly RaceManager _raceManager = new();
+    private readonly RaylibAudioManager _audio = new();
+    
     private readonly Car _playerCar = new();
     private readonly Track _track;
-    
     private readonly IInputManager _input;
 
     public GameApp()
     {
-        _track = _generator.Generate(30, 1000, 150); // Generar pista más compleja
+        _track = _generator.Generate(30, 1000, 150);
+        _raceManager.InitializeOpponents(5, _track);
+        
         _playerCar.MaxSpeed = 350.0f;
         _playerCar.BaseAcceleration = 50.0f;
         _input = new RaylibInputManager();
@@ -54,16 +58,14 @@ public class GameApp
         float steering = _input.GetAxis("Horizontal");
 
         _physics.Update(_playerCar, deltaTime, gas, steering, brake);
+        _raceManager.Update(deltaTime, _track);
+
+        // Audio: Simular motor (Agnóstico a si el archivo existe por ahora)
+        _audio.UpdateEnginePitch("engine", _playerCar.CurrentSpeed, _playerCar.MaxSpeed);
 
         // Loop infinito de pista
         if (_playerCar.Position.Progress > _track.TotalLength)
-        {
             _playerCar.Position = _playerCar.Position with { Progress = _playerCar.Position.Progress - _track.TotalLength };
-        }
-        else if (_playerCar.Position.Progress < 0)
-        {
-            _playerCar.Position = _playerCar.Position with { Progress = _track.TotalLength + _playerCar.Position.Progress };
-        }
     }
 
     private void Render()
@@ -71,8 +73,8 @@ public class GameApp
         // Proyectar segmentos visibles
         var screenPolygons = _camera.Project(_track, _playerCar, 1280, 720, 15, 0.7f, 200);
         
-        // Dibujar frame
-        _renderer.DrawFrame(screenPolygons, _input.GetAxis("Horizontal"));
+        // Dibujar frame con oponentes
+        _renderer.DrawFrame(screenPolygons, _input.GetAxis("Horizontal"), _raceManager.Opponents, _camera, _playerCar);
 
         // UI de telemetría
         Raylib.DrawRectangle(10, 10, 250, 80, Raylib.Fade(Color.BLACK, 0.5f));

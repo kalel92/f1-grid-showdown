@@ -21,5 +21,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\F1Game.Core\F1Game.Core.csproj" />
+    <ProjectReference Include="..\..\src\F1Game.Services\F1Game.Services.csproj" />
   </ItemGroup>
 </Project>

@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Raylib-cs" Version="4.0.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\F1Game.Core\F1Game.Core.csproj" />
     <ProjectReference Include="..\F1Game.Services\F1Game.Services.csproj" />
   </ItemGroup>
